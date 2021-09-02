@@ -1,0 +1,1475 @@
+@font-face {
+    font-family: Avenir;
+    src: url("fonts/exported-fonts/Avenir-Medium-09.ttf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Avenir";
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* This is the Form Modal Section */
+
+.v2-form-modal-container {
+    width: 100%;
+    height: 100vh;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.81);
+    z-index: 999;
+}
+
+.v2-form-modal-wrapper {
+    width: 100%;
+    height: 70%;
+    max-width: 1440px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.v2-form-modal-exit-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.v2-form-modal-exit-btn>p {
+    text-align: right;
+    color: #fff;
+    padding: 0 15px;
+    font-size: 2rem;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.v2-form-modal-exit-btn>p:hover {
+    color: #ea2027;
+}
+
+.v2-form-modal-box {
+    background-color: #fff;
+    width: 65%;
+    max-width: 800px;
+    height: 70%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.v2-form-modal-content {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.v2-form-modal-content>h2 {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.v2-form-modal-content>p {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.v2-form-modal-content>form {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.v2-form-modal-content>form>input {
+    width: 90%;
+    font-size: 1rem;
+    padding: 15px 5px;
+    margin-top: 10px;
+    border: 1px solid rgb(205, 205, 205);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+
+/* Video Modal Section */
+
+.video-btn-wrapper {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 320px;
+}
+
+.video-btn {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    border-radius: 3px;
+    text-align: center;
+    text-decoration: none;
+    background-color: red;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 1.5em;
+}
+
+.video-wrapper {
+    display: none;
+    position: fixed;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.413);
+    padding: 0;
+    margin: 0;
+    top: 0;
+    z-index: 999;
+}
+
+.video-box {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.video-exit-btn-container {
+    width: 100%;
+    color: #fff;
+    font-size: 2em;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.video-exit-btn-container>p {
+    width: 50px;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.video-exit-btn-container>p:hover {
+    color: red;
+}
+
+#video-src {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+
+/* This is the Nav Section */
+
+.v2-nav-container {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    box-shadow: 0px 6px 8px #0000002b;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+}
+
+.v2-nav-wrapper {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.v2-logo-container {
+    width: 30%;
+}
+
+.v2-logo {
+    width: 100%;
+}
+
+.v2-logo>img {
+    width: 70%;
+    min-width: 200px;
+}
+
+.v2-nav-list-container {
+    width: 60%;
+}
+
+.v2-nav-list-container>ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.v2-nav-list-container>ul>li {
+    list-style: none;
+}
+
+.v2-nav-list-container>ul>li>a {
+    text-decoration: none;
+    color: #373737;
+    font-weight: 900;
+    font-size: 1.1em;
+}
+
+.v2-nav-list-container>ul>li>a:hover {
+    border-bottom: #ea2027 2px solid;
+}
+
+.v2-nav-call-now-container {
+    background-color: #ea2027;
+    padding: 10px 15px;
+    border-radius: 3px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.v2-nav-call-now-container:hover {
+    background-color: #c41a20;
+}
+
+.v2-nav-call-now-container>a {
+    color: #fff !important;
+}
+
+
+/* This is the Mobile Nav Section */
+
+.v2-nav-mobile-trigger-container {
+    display: none;
+}
+
+.v2-nav-mobile-trigger {
+    width: 100%;
+    color: #373737;
+}
+
+.v2-nav-mobile-trigger>p {
+    width: 100%;
+    text-align: right;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.v2-nav-mobile-container>ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.v2-nav-mobile-container {
+    width: 250px;
+    height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: -265px;
+    box-shadow: -3px 0px 8px #00000056;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.v2-nav-mobile-exit-trigger {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin: 0 auto;
+}
+
+.v2-nav-mobile-exit-trigger>p {
+    width: 30px;
+    text-align: center;
+    font-size: 2em;
+    cursor: pointer;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.v2-nav-mobile-exit-trigger>p:hover {
+    color: red;
+}
+
+.v2-nav-mobile-container>ul {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+}
+
+.v2-nav-mobile-container>ul>li {
+    width: 100%;
+    list-style: none;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.v2-nav-mobile-container>ul>li>a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #373737;
+    font-weight: 900;
+    font-size: 1.1em;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 0;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.v2-nav-mobile-container>ul>li>a:hover {
+    background-color: red;
+    color: #fff;
+}
+
+
+/* This is the Hero Section */
+
+.v2-hero-section {
+    width: 100%;
+    height: 80vh;
+    max-height: 1000px;
+    margin-top: 100px;
+    /* padding: 15% 0 15% 0; */
+    background: rgba(0, 0, 0, 0.701) url("https://quietcoolsystems.com/wp-content/uploads/2021/09/lifestyle-family-table.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.v2-hero-wrapper {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.v2-hero-box {
+    width: 45%;
+}
+
+
+/* This is the Hero Text Section */
+
+.v2-hero-main-text-content {
+    padding-top: 10px;
+}
+
+.v2-hero-title>h1 {
+    font-size: 3rem;
+    color: #fff;
+}
+
+.v2-hero-main-text-content>p {
+    padding-top: 10px;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.v2-hero-phone-number-container {
+    padding-top: 20px;
+}
+
+.v2-hero-phone-number-container>h2 {
+    color: #fff;
+    font-size: 4rem;
+}
+
+.v2-hero-phone-number-container>h2>a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.v2-hero-request-quote-container {
+    width: 100%;
+    padding-top: 20px;
+    display: none;
+}
+
+.v2-hero-request-quote-wrapper {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.v2-hero-request-quote-wrapper>a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: #ea2027;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    padding: 20px 0;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.v2-hero-request-quote-wrapper>a:hover {
+    background-color: #c41a20;
+}
+
+
+/* This is the Hero Form Section */
+
+.v2-hero-box:nth-child(2) {
+    width: 100%;
+    max-width: 550px;
+    height: 100%;
+    padding: 100px 50px;
+    background-color: #fff;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+.v2-hero-form-container {
+    width: 100%;
+    height: 100%;
+}
+
+.v2-hero-form-container>h2 {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.v2-hero-form-container>p {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.v2-hero-form-container>form {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.v2-hero-form-container>form>input {
+    width: 90%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #8080805c;
+}
+
+.v2-hero-form-btn {
+    background-color: #ea2027;
+    color: #fff;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+/* Badges Section */
+
+.v2-badges-container {
+    width: 100%;
+    background-color: #fff;
+}
+
+.v2-badges-wrapper {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.v2-badges-content {
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+}
+
+.v2-badges-content>ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.v2-badges-content>ul>li {
+    list-style: none;
+}
+
+.v2-badges-content>ul>li:nth-child(3)>img {
+    width: 125px;
+}
+
+.v2-badges-content>ul>li>img {
+    width: 150px;
+}
+
+
+/* Who We Are Section */
+
+.v2-who-we-are-container {
+    width: 100%;
+    height: auto;
+    background-color: #1d66b3;
+    padding: 100px 0;
+}
+
+.v2-who-we-are-wrapper {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.v2-who-we-are-content {
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.v2-who-we-are-content>h1 {
+    color: #fff;
+    font-size: 3.5rem;
+    text-align: center;
+    width: 80%;
+}
+
+.v2-who-we-are-content>h2 {
+    color: #fff;
+    font-size: 2.5rem;
+    width: 100%;
+    text-align: center;
+}
+
+.v2-who-we-are-content-phone-number {
+    padding: 30px 0;
+}
+
+.v2-who-we-are-content-phone-number>h2 {
+    color: #fff;
+    font-size: 2.5rem;
+    width: 100%;
+    text-align: center;
+}
+
+.v2-who-we-are-content-phone-number>h2>a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.v2-who-we-are-content>p {
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 90%;
+    padding-top: 20px;
+}
+
+
+/* Stats Section */
+
+.v2-stats-container {
+    width: 100%;
+    padding: 100px 0;
+    background: rgba(0, 0, 0, 0.708) url("https://quietcoolsystems.com/global-images/v3-landing-page-image/qc-install-trident-attic-opening.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    background-size: cover;
+}
+
+.v2-stats-wrapper {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.v2-stats-wrapper>h2 {
+    width: 70%;
+    text-align: center;
+    color: #fff;
+    font-size: 3.5rem;
+    margin: 0 auto;
+}
+
+.v2-stats-wrapper>ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-top: 50px;
+}
+
+.v2-stats-wrapper>ul>li {
+    width: 30%;
+    list-style: none;
+    text-align: center;
+}
+
+.v2-stats-wrapper>ul>li>p {
+    font-size: 3rem;
+    color: #fff;
+}
+
+.v2-stats-wrapper>ul>li>h2 {
+    font-size: 3rem;
+    color: #fff;
+}
+
+.v2-stats-wrapper>ul>li>h3 {
+    font-size: 2rem;
+    color: #fff;
+}
+
+
+/* Video Section */
+
+.v2-video-section-container {
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    background-color: #fff;
+}
+
+.v2-video-section-wrapper {
+    width: 100%;
+    max-width: 1440px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.v2-video-section-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.v2-video-section-content>h1 {
+    width: 60%;
+    font-size: 3.5rem;
+    color: #373737;
+    text-align: center;
+}
+
+.v2-video-section-box {
+    width: 45%;
+    padding-top: 50px;
+}
+
+.v2-video-section-box>p {
+    padding-top: 20px;
+    font-size: 1.2rem;
+    color: #373737;
+}
+
+.v2-video-content {
+    width: 100%;
+    height: 400px;
+    background-image: url("https://quietcoolsystems.com/global-images/v3-landing-page-image/video-poster.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.v2-video-play-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.v2-video-play-btn>i {
+    font-size: 4rem;
+    cursor: pointer;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.v2-video-play-btn>i:hover {
+    color: #c41a20;
+}
+
+
+/* Benefits Section */
+
+.v2-benefits-container {
+    width: 100%;
+    padding: 100px 0;
+    background: rgba(0, 0, 0, 0.701) url("https://quietcoolsystems.com/wp-content/uploads/2021/08/STL-Header.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+}
+
+.v2-benefits-wrapper {
+    width: 100%;
+    max-width: 1440px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.v2-benefits-wrapper>h1 {
+    width: 80%;
+    font-size: 3.5rem;
+    margin: 0 auto;
+    text-align: center;
+    color: #ffffff;
+}
+
+.v2-benefits-wrapper>p {
+    width: 80%;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 30px;
+    color: #fff;
+}
+
+.v2-benefits-box {
+    width: 30%;
+}
+
+.v2-benefits-box>p:nth-child(1) {
+    font-size: 3rem;
+    color: #fff;
+    text-align: center;
+}
+
+.v2-benefits-box>h3 {
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+}
+
+.v2-benefits-box>p:nth-child(3) {
+    font-size: 1.2rem;
+    color: #fff;
+    text-align: center;
+}
+
+
+/* How It Works Section */
+
+.v2-how-it-works-wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.v2-how-it-works-box>h1 {
+    width: 90%;
+    text-align: center;
+    font-size: 3.5rem;
+    margin: 0 auto;
+}
+
+.v2-how-it-works-box {
+    width: 50%;
+}
+
+.v2-how-it-works-image {
+    width: 100%;
+    height: 600px;
+    background-image: url("https://quietcoolsystems.com/wp-content/uploads/2021/09/how-it-works.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.v2-how-it-works-numbers {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.v2-how-it-works-number {
+    width: 6%;
+    padding: 10px;
+}
+
+.v2-how-it-works-number>img {
+    width: 100%;
+    min-width: 35px;
+    max-width: 45px;
+}
+
+.v2-how-it-works-text-content {
+    width: 80%;
+}
+
+.v2-how-it-works-text-content>h2 {
+    font-size: 2rem;
+}
+
+.v2-how-it-works-text-content>p {
+    font-size: 1.2rem;
+}
+
+
+/* About Us Section */
+
+.v2-about-us-container {
+    width: 100%;
+    height: auto;
+}
+
+.v2-about-us-wrapper {
+    width: 100%;
+    /* max-width: 1440px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.v2-about-us-box {
+    width: 50%;
+}
+
+.v2-about-us-box:nth-child(1) {
+    display: none;
+    height: 600px;
+    background-image: url("https://quietcoolsystems.com/wp-content/uploads/2020/04/quietcool-guys-2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.v2-about-us-box:nth-child(3) {
+    height: 600px;
+    background-image: url("https://quietcoolsystems.com/wp-content/uploads/2020/04/quietcool-guys-2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.v2-about-us-text-content {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.v2-about-us-text-content>h3 {
+    font-size: 1.5rem;
+}
+
+.v2-about-us-text-content>h1 {
+    font-size: 3.5rem;
+}
+
+.v2-about-us-text-content>p {
+    font-size: 1.2rem;
+}
+
+
+/* FAQ Section */
+
+.v2-faq-container {
+    width: 100%;
+    background-color: #242424;
+    padding: 100px 0;
+}
+
+.v2-faq-wrapper {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.v2-faq-wrapper>h1 {
+    color: #fff;
+    width: 80%;
+    font-size: 3.5rem;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.v2-faq-box {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.v2-faq-text-content {
+    width: 90%;
+    height: 200px;
+    padding-bottom: 30px;
+}
+
+.v2-faq-text-content>h2 {
+    color: #fff;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+.v2-faq-text-content>p {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+
+/* 
+These are the Media Queries */
+
+@media only screen and (min-width:1281px) {
+    .v2-nav-mobile-container {
+        right: -265px !important;
+    }
+    .v2-form-modal-container {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:1280px) {
+    /* this is the Nav Section */
+    .v2-nav-list-container>ul {
+        display: none;
+    }
+    .v2-nav-mobile-trigger-container {
+        display: block;
+    }
+    .v2-nav-mobile-trigger {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    /* This is the Hero Section */
+    .v2-hero-section {
+        height: auto;
+        padding: 50px 0;
+    }
+    .v2-hero-box:nth-child(1) {
+        width: 70%;
+    }
+    .v2-hero-title>h1 {
+        text-align: center;
+    }
+    .v2-hero-main-text-content>p {
+        text-align: center;
+    }
+    .v2-hero-phone-number-container>h2 {
+        text-align: center;
+    }
+    .v2-hero-box:nth-child(2) {
+        display: none;
+    }
+    .v2-hero-request-quote-container {
+        display: block;
+    }
+    /* Who We Are Section */
+    .v2-who-we-are-content {
+        width: 70%;
+    }
+    /* Stats Section */
+    .v2-stats-wrapper>h2 {
+        width: 80%;
+    }
+    .v2-stats-wrapper>ul>li>h3 {
+        font-size: 1.8rem;
+    }
+    /* How It Works Section */
+    .v2-how-it-works-box>h1 {
+        width: 100%;
+        font-size: 2.5rem;
+    }
+    .v2-how-it-works-text-content {
+        width: 78%;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    .v2-how-it-works-box {
+        width: 100%;
+    }
+    .v2-how-it-works-box:nth-child(2) {
+        width: 100%;
+        padding: 50px 0;
+    }
+    .v2-how-it-works-box>h1 {
+        font-size: 3.5rem;
+    }
+    .v2-about-us-box:nth-child(1) {
+        display: block;
+        width: 100%;
+    }
+    .v2-about-us-box:nth-child(2) {
+        width: 100%;
+        padding: 50px 0;
+    }
+    .v2-about-us-box:nth-child(3) {
+        display: none;
+    }
+    /* FAQ Section */
+    .v2-faq-box {
+        width: 90%;
+    }
+    .v2-faq-text-content {
+        height: auto;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .v2-hero-title>h1 {
+        font-size: 3rem;
+    }
+    .v2-who-we-are-content {
+        width: 90%;
+    }
+    .v2-who-we-are-content>h1 {
+        font-size: 3rem;
+    }
+    .v2-stats-wrapper>h2 {
+        font-size: 3rem;
+        width: 90%;
+    }
+    .v2-stats-wrapper>ul>li>h2 {
+        font-size: 2.5rem;
+    }
+    .v2-stats-wrapper>ul>li>h3 {
+        font-size: 1.3rem;
+    }
+    /* Video Section */
+    .v2-video-section-content>h1 {
+        width: 80%;
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    /* This is the Form modal Section */
+    .v2-form-modal-box {
+        width: 95%;
+    }
+    /* This is the Hero Section */
+    .v2-hero-box:nth-child(1) {
+        width: 90%;
+    }
+    /* Badge Section */
+    .v2-badges-content>ul>li>img {
+        width: 110px;
+    }
+    .v2-badges-content>ul>li:nth-child(3)>img {
+        width: 90px;
+    }
+    .v2-hero-title>h1 {
+        font-size: 2.5rem;
+    }
+    /* Who We Are Section */
+    .v2-who-we-are-content {
+        width: 90%;
+    }
+    .v2-who-we-are-content>h1 {
+        font-size: 2.5rem;
+    }
+    .v2-who-we-are-content>h2 {
+        font-size: 1.5rem;
+    }
+    /* Stats Section */
+    .v2-stats-wrapper>h2 {
+        font-size: 2.5rem;
+    }
+    .v2-stats-wrapper>ul>li>h2 {
+        font-size: 2rem;
+    }
+    /* Video Section */
+    .v2-video-section-content>h1 {
+        width: 80%;
+        font-size: 2.5rem;
+    }
+    .v2-video-section-box {
+        width: 90%;
+    }
+    /* Benefits Section */
+    .v2-benefits-wrapper>h1 {
+        width: 85%;
+        font-size: 2.5rem;
+        padding: 20px 0;
+    }
+    /* How It Works Section */
+    .v2-how-it-works-box>h1 {
+        font-size: 2.5rem;
+    }
+    /* About us Section */
+    .v2-about-us-text-content>h1 {
+        font-size: 2.5rem;
+    }
+    /* FAQ Section */
+    .v2-faq-wrapper>h1 {
+        font-size: 2.5rem;
+    }
+    .v2-faq-text-content>h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width:735px) {
+    .v2-benefits-wrapper>p {
+        width: 90%;
+    }
+    .v2-benefits-box {
+        width: 90%;
+        padding-top: 30px;
+    }
+}
+
+@media only screen and (max-width:414px) {
+    .v2-form-modal-wrapper {
+        height: auto;
+    }
+    .v2-form-modal-box {
+        height: auto;
+    }
+    .v2-form-modal-content {
+        width: 90%;
+    }
+    .v2-form-modal-content>h2 {
+        width: 90%;
+        font-size: 1.3rem;
+    }
+    .v2-form-modal-content>p {
+        width: 70%;
+        font-size: 1rem;
+    }
+    .v2-form-legal-links {
+        width: 100% !important;
+        font-size: 1rem;
+    }
+    .v2-form-modal-content>form>input {
+        font-size: .8rem;
+    }
+    /* Hero Section */
+    .v2-hero-title>h1 {
+        font-size: 2rem;
+    }
+    .v2-hero-phone-number-container>h2 {
+        width: 100%;
+        font-size: 2.5rem;
+    }
+    .v2-hero-request-quote-wrapper {
+        width: 70%;
+    }
+    .v2-hero-main-text-content>p:nth-child(2) {
+        display: none;
+    }
+    /* Who We Are Section */
+    .v2-who-we-are-content {
+        width: 90%;
+    }
+    .v2-who-we-are-content>h1 {
+        width: 100%;
+        font-size: 2rem;
+    }
+    .v2-who-we-are-content>h2 {
+        font-size: 1.4rem;
+    }
+    .v2-who-we-are-content-phone-number>h2 {
+        font-size: 1.7rem;
+    }
+    /* Stats Section */
+    .v2-stats-wrapper>h2 {
+        font-size: 2rem;
+    }
+    .v2-stats-wrapper>ul>li {
+        width: 90%;
+        padding-top: 30px;
+    }
+    /* Video Section */
+    .v2-video-section-content>h1 {
+        width: 80%;
+        font-size: 2.5rem;
+    }
+    .v2-video-section-box>p {
+        text-align: center;
+    }
+    /* Benefits Section */
+    .v2-benefits-wrapper>h1 {
+        width: 85%;
+        font-size: 2.5rem;
+        padding-bottom: 20px;
+    }
+    /* How It Works Section */
+    .v2-how-it-works-box>h1 {
+        font-size: 2.2rem;
+    }
+    .v2-how-it-works-text-content>h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .v2-how-it-works-text-content>p {
+        text-align: center;
+    }
+    .v2-how-it-works-text-content {
+        width: 90%;
+    }
+    /* About Us Section */
+    .v2-about-us-text-content>h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .v2-about-us-text-content>h3 {
+        text-align: center;
+    }
+    .v2-about-us-text-content>p {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    /* FAQ Section  */
+    .v2-faq-text-content>h2 {
+        text-align: center;
+        font-weight: 900;
+    }
+    .v2-faq-text-content>p {
+        padding-top: 20px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:320px) {
+    .v2-form-modal-wrapper {
+        height: auto;
+    }
+    .v2-form-modal-box {
+        height: auto;
+    }
+    .v2-form-modal-content {
+        width: 90%;
+    }
+    .v2-form-modal-content>h2 {
+        width: 90%;
+        font-size: 1.3rem;
+    }
+    .v2-form-modal-content>p {
+        width: 70%;
+        font-size: 1rem;
+    }
+    .v2-form-legal-links {
+        width: 100% !important;
+        font-size: 1rem;
+    }
+    .v2-form-modal-content>form>input {
+        font-size: .8rem;
+    }
+    /* Hero Section */
+    .v2-hero-title>h1 {
+        font-size: 1.5rem;
+    }
+    .v2-hero-phone-number-container>h2 {
+        width: 100%;
+        font-size: 2rem;
+    }
+    .v2-hero-request-quote-wrapper {
+        width: 70%;
+    }
+    .v2-hero-main-text-content>p:nth-child(2) {
+        display: none;
+    }
+    .v2-badges-content>ul>li>img {
+        width: 80px;
+    }
+    .v2-badges-content>ul>li:nth-child(3)>img {
+        width: 70px;
+    }
+    .v2-who-we-are-content>h1 {
+        font-size: 1.5rem;
+    }
+    .v2-who-we-are-content>h2 {
+        font-size: 1.5rem;
+    }
+    /* Who We Are Section */
+    .v2-who-we-are-content>p {
+        font-size: 1rem;
+    }
+    /* Stats Section */
+    .v2-stats-wrapper>h2 {
+        font-size: 1.5rem;
+    }
+    /* Video Section */
+    .v2-video-section-content>h1 {
+        width: 90%;
+        font-size: 1.5rem;
+    }
+    .v2-video-section-box {
+        padding-top: 20px;
+    }
+    .v2-video-section-box>p {
+        text-align: center;
+        font-size: 1rem;
+    }
+    /* Benefits Section  */
+    .v2-benefits-wrapper>h1 {
+        font-size: 1.5rem;
+    }
+    .v2-benefits-box>h3 {
+        font-size: 1.5rem;
+    }
+    .v2-benefits-wrapper>p {
+        font-size: 1rem;
+    }
+    .v2-benefits-box>p:nth-child(3) {
+        font-size: 1rem;
+    }
+    /* How It Works Section */
+    .v2-how-it-works-box>h1 {
+        font-size: 1.5rem;
+    }
+    .v2-how-it-works-text-content>h2 {
+        font-size: 1.2rem;
+    }
+    .v2-how-it-works-text-content>p {
+        font-size: 1rem;
+    }
+    /* About Us Section */
+    .v2-about-us-text-content>h1 {
+        font-size: 1.5rem;
+    }
+    .v2-about-us-text-content>p {
+        font-size: 1rem;
+        padding-top: 20px;
+    }
+    /* FAQ Section */
+    .v2-faq-wrapper>h1 {
+        font-size: 1.5rem;
+    }
+    .v2-faq-text-content>h2 {
+        font-size: 1.2rem;
+    }
+    .v2-faq-text-content>p {
+        font-size: 1rem;
+    }
+}
+
+
+/* These are the Height Media Queries */
+
+@media only screen and (max-height:700px) {
+    .v2-form-modal-box {
+        height: 93%;
+    }
+}
+
+@media only screen and (max-height:414px) {
+    .v2-form-modal-box {
+        overflow: auto;
+    }
+    .v2-nav-mobile-container>ul {
+        height: 85%;
+        overflow: auto;
+    }
+    .v2-nav-mobile-container>ul>li>a {
+        width: 80%;
+        padding: 10px 0;
+    }
+}
