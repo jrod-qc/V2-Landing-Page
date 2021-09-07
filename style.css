@@ -25,6 +25,10 @@ i {
 
 /* This is the Rebate Section */
 
+.optionTwo {
+    display: none;
+}
+
 .rebate-modal-popup-container-2 {
     position: fixed;
     top: 0;
