@@ -88,7 +88,7 @@ html {
     background-color: #fff;
     width: 65%;
     max-width: 800px;
-    height: 70%;
+    height: auto;
     margin: 0 auto;
     padding: 40px 0;
 }
@@ -345,7 +345,7 @@ html {
 }
 
 .v2-logo-container {
-    width: 30%;
+    width: 25%;
 }
 
 .v2-logo {
@@ -358,7 +358,7 @@ html {
 }
 
 .v2-nav-list-container {
-    width: 60%;
+    width: 73%;
 }
 
 .v2-nav-list-container>ul {
@@ -1182,7 +1182,7 @@ html {
 
 .title-section>h2 {
     text-align: center;
-    font-size: 2.5rem
+    font-size: 2rem
 }
 
 
@@ -2357,10 +2357,150 @@ input[type="range"]::-moz-range-thumb::before {
 }
 
 
+/* This is the footer Section */
+
+.v2-footer-container {
+    width: 100%;
+    height: auto;
+}
+
+.v2-footer-wrapper {
+    width: 100%;
+    max-width: 1440px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.v2-footer-content {
+    width: 31%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.v2-social-media-content {
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.v2-footer-content:nth-child(1)>p>a {
+    color: #ea252c;
+}
+
+.v2-footer-content:nth-child(2)>p>a {
+    color: #ea252c;
+}
+
+.v2-social-media-content>ul {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.v2-social-media-content>ul>li {
+    list-style: none;
+    padding: 5px;
+}
+
+.v2-social-media-content>ul>li>a {
+    color: #242424;
+    font-size: 2rem;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.v2-social-media-content>ul>li:nth-child(1)>a:hover {
+    color: rgb(255, 131, 37);
+}
+
+.v2-social-media-content>ul>li:nth-child(2)>a:hover {
+    color: rgb(125, 57, 4);
+}
+
+.v2-social-media-content>ul>li:nth-child(3)>a:hover {
+    color: rgb(28, 137, 220);
+}
+
+
+/* The Footer Button Section */
+
+.v2-footer-phone-btn-container {
+    display: none;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 95;
+}
+
+.v2-footer-phone-btn-wrapper {
+    width: 100%;
+    max-width: 1440px;
+}
+
+.v2-footer-phone-btn {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(9, 176, 9);
+}
+
+.v2-footer-phone-btn>a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 2rem;
+}
+
+
 /* 
 These are the Media Queries */
 
-@media not all and (min-resolution:.001dpcm) {
+@media not all and (-webkit-min-device-pixel-ratio:0),
+not all and (-o-min-device-pixel-ratio:0/1),
+not all and (min-resolution:.001dpcm) {
     @supports (-webkit-appearance: none) {
         /* Hero Section */
         .v2-hero-section, .v2-stats-container, .v2-benefits-container {
@@ -2511,7 +2651,7 @@ These are the Media Queries */
     }
     /* FAQ Section */
     .v2-faq-box {
-        width: 90%;
+        width: 95%;
     }
     .v2-faq-text-content {
         height: auto;
@@ -2637,6 +2777,14 @@ These are the Media Queries */
     .rf-controller-side>img:nth-child(2) {
         width: 75%;
     }
+    /* Footer Section */
+    .v2-footer-container {
+        padding: 20px 0 0px 0;
+    }
+    .v2-footer-content {
+        width: 100%;
+        padding-bottom: 10px;
+    }
 }
 
 @media only screen and (max-width:900px) {
@@ -2673,12 +2821,60 @@ These are the Media Queries */
     }
 }
 
-@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
-    /* your css rules for iPad portrait */
+@media only screen and (max-width:768px) {
+    /* This is the Form modal Section */
+    .v2-form-modal-box {
+        width: 95%;
+    }
+    /* This is the Hero Section */
+    .v2-hero-box:nth-child(1) {
+        width: 90%;
+    }
+    /* Badge Section */
+    .v2-badges-content>ul>li>img {
+        width: 110px;
+    }
+    .v2-badges-content>ul>li:nth-child(3)>img {
+        width: 90px;
+    }
+    .v2-hero-title>h1 {
+        font-size: 2.5rem;
+    }
+    /* Who We Are Section */
+    .v2-who-we-are-content {
+        width: 90%;
+    }
+    .v2-who-we-are-content>h1 {
+        font-size: 2.5rem;
+    }
+    .v2-who-we-are-content>h2 {
+        font-size: 1.5rem;
+    }
+    /* Stats Section */
+    .v2-stats-wrapper>h2 {
+        font-size: 2.5rem;
+    }
+    .v2-stats-wrapper>ul>li>h2 {
+        font-size: 2rem;
+    }
+    /* Video Section */
     .v2-video-section-content>h1 {
         width: 80%;
-        font-size: 2.3em;
-        padding: 0px;
+        font-size: 2.5rem;
+        padding: 0;
+    }
+    .v2-video-section-box {
+        width: 90%;
+    }
+    /* Benefits Section */
+    .v2-benefits-wrapper>h1 {
+        width: 85%;
+        font-size: 2.5rem;
+        padding: 20px 0;
+    }
+    /* How It Works Section */
+    .v2-how-it-works-box>h1 {
+        font-size: 2.5rem;
     }
     /* Calculator Section */
     .selection-box-ac>h2,
@@ -2709,12 +2905,27 @@ These are the Media Queries */
     #slider-day-results-ac,
     #slider-month-results-ac,
     #slider-year-results-ac {
-        font-size: 1.5em !important;
+        font-size: 1.3em !important;
     }
     .comparison-main-box {
         -webkit-box-align: start;
         -ms-flex-align: start;
         align-items: flex-start;
+    }
+    .comparison-box-ac,
+    .comparison-box-qc {
+        padding: 0 !important;
+    }
+    /* About us Section */
+    .v2-about-us-text-content>h1 {
+        font-size: 2.5rem;
+    }
+    /* FAQ Section */
+    .v2-faq-wrapper>h1 {
+        font-size: 2.5rem;
+    }
+    .v2-faq-text-content>h2 {
+        font-size: 1.5rem;
     }
     /* Products Sections */
     /* This is the trident section */
@@ -2755,6 +2966,7 @@ These are the Media Queries */
     }
     .trident-side>.title-section>h2 {
         width: 75%;
+        margin: 0 auto;
     }
     .trident-list>li {
         font-size: 1em;
@@ -2809,7 +3021,8 @@ These are the Media Queries */
     }
     /* This is the RF Section */
     .rf-controller-title-section>.title-section>h2 {
-        width: 75%;
+        width: 55%;
+        margin: 0 auto;
     }
     .rf-controller-item {
         background-attachment: scroll;
@@ -2825,8 +3038,216 @@ These are the Media Queries */
         margin: 0 auto;
         font-size: 1em;
     }
+    .rf-controller-side>img:nth-child(2) {
+        width: 75%;
+    }
+    /* Footer Section */
+    .v2-footer-container {
+        padding: 20px 0 90px 0;
+    }
+    .v2-footer-phone-btn-container {
+        display: block;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    /* your css rules for iPad portrait */
+    .v2-video-section-content>h1 {
+        width: 80%;
+        font-size: 2.3em;
+        padding: 0px;
+    }
+    /* This is the Form modal Section */
+    .v2-form-modal-box {
+        width: 95%;
+    }
+    /* This is the Hero Section */
+    .v2-hero-box:nth-child(1) {
+        width: 90%;
+    }
+    /* Badge Section */
+    .v2-badges-content>ul>li>img {
+        width: 110px;
+    }
+    .v2-badges-content>ul>li:nth-child(3)>img {
+        width: 90px;
+    }
+    .v2-hero-title>h1 {
+        font-size: 2.5rem;
+    }
+    /* Who We Are Section */
+    .v2-who-we-are-content {
+        width: 90%;
+    }
+    .v2-who-we-are-content>h1 {
+        font-size: 2.5rem;
+    }
+    .v2-who-we-are-content>h2 {
+        font-size: 1.5rem;
+    }
+    /* Stats Section */
+    .v2-stats-wrapper>h2 {
+        font-size: 2.5rem;
+    }
+    .v2-stats-wrapper>ul>li>h2 {
+        font-size: 2rem;
+    }
+    /* Video Section */
+    .v2-video-section-content>h1 {
+        width: 80%;
+        font-size: 2.5rem;
+        padding: 0;
+    }
+    .v2-video-section-box {
+        width: 90%;
+    }
+    /* Benefits Section */
+    .v2-benefits-wrapper>h1 {
+        width: 85%;
+        font-size: 2.5rem;
+        padding: 20px 0;
+    }
+    /* How It Works Section */
+    .v2-how-it-works-box>h1 {
+        font-size: 2.5rem;
+    }
+    /* Calculator Section */
+    .selection-box-ac>h2,
+    .selection-box>h2 {
+        width: 90%;
+        font-size: 2em;
+    }
+    #comparison-box-qc-wrapper,
+    #comparison-box-ac-wrapper,
+    #ac-kwh-selection {
+        width: 90%;
+    }
+    #fan-selection,
+    #trident-models,
+    #stealth-models,
+    #ac-kwh-selection {
+        font-size: 1em;
+    }
+    .hours-box>h2,
+    .day-title,
+    .month-title,
+    .year-title,
+    #slider-and-results-wrapper>.title-section>h3,
+    #slider-day-results,
+    #slider-month-results,
+    #slider-year-results,
+    #slider-and-results-kwh-wrapper>.title-section>h3,
+    #slider-day-results-ac,
+    #slider-month-results-ac,
+    #slider-year-results-ac {
+        font-size: 1.3em !important;
+    }
+    .comparison-main-box {
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+    }
+    .comparison-box-ac,
+    .comparison-box-qc {
+        padding: 0 !important;
+    }
+    /* About us Section */
+    .v2-about-us-text-content>h1 {
+        font-size: 2.5rem;
+    }
+    /* FAQ Section */
+    .v2-faq-wrapper>h1 {
+        font-size: 2.5rem;
+    }
+    .v2-faq-text-content>h2 {
+        font-size: 1.5rem;
+    }
+    /* Products Sections */
+    /* This is the trident section */
+    .trident-item {
+        background-attachment: scroll;
+    }
+    .trident-side {
+        width: 90%;
+    }
+    .tab-nav {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+    }
+    .tab-nav>ul {
+        width: 100%;
+    }
+    .tab-nav>ul>li {
+        width: 29%;
+        font-size: 1em;
+        padding: 5px 10px;
+    }
+    .whf-table-box>div>table>tbody>tr>td {
+        font-size: 1em;
+    }
+    .trident-side>.title-section {
+        padding: 20px 0;
+    }
+    .disclosure {
+        width: 75%;
+        margin: 0 auto;
+        font-size: 1em;
+    }
+    .trident-side>.title-section>h2 {
+        width: 75%;
+        margin: 0 auto;
+    }
+    .trident-list>li {
+        font-size: 1em;
+    }
+    .trident-side>p {
+        font-size: 1em;
+    }
+    /* This is the Stealth Section */
+    .stealth-item {
+        background-attachment: scroll;
+    }
+    .stealth-side {
+        width: 90%;
+    }
+    .tab-nav {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+    }
+    .tab-nav>ul {
+        width: 100%;
+    }
+    .tab-nav>ul>li {
+        width: 29%;
+        font-size: 1em;
+        padding: 5px 10px;
+    }
+    .whf-table-box>div>table>tbody>tr>td {
+        font-size: 1em;
+    }
+    .stealth-side>.title-section {
+        padding: 20px 0;
+    }
+    .disclosure {
+        width: 75%;
+        margin: 0 auto;
+        font-size: 1em;
+    }
     .stealth-side>.title-section>h2 {
         width: 75%;
+        margin: 0 auto;
     }
     .stealth-list>li {
         font-size: 1em;
@@ -2834,12 +3255,38 @@ These are the Media Queries */
     .stealth-side>p {
         font-size: 1em;
     }
+    /* This is the RF Section */
+    .rf-controller-title-section>.title-section>h2 {
+        width: 55%;
+        margin: 0 auto;
+    }
+    .rf-controller-item {
+        background-attachment: scroll;
+    }
+    .rf-controller-side {
+        width: 90%;
+    }
+    .rf-controller-side>.title-section {
+        padding: 20px 0;
+    }
+    .disclosure {
+        width: 75%;
+        margin: 0 auto;
+        font-size: 1em;
+    }
     .rf-controller-side>img:nth-child(2) {
         width: 75%;
     }
+    /* Footer Section */
+    .v2-footer-container {
+        padding: 20px 0 90px 0;
+    }
+    .v2-footer-phone-btn-container {
+        display: block;
+    }
 }
 
-@media all and (device-width: 1024px) and (device-height: 768px) and (orientation:landscape) {
+@media all and (device-width: 1024px) and (device-height: 768px) {
     /* your css rules for iPad landscape */
     .v2-video-section-content>h1 {
         width: 56%;
@@ -3012,236 +3459,6 @@ These are the Media Queries */
     }
 }
 
-@media only screen and (max-width:768px) {
-    /* This is the Form modal Section */
-    .v2-form-modal-box {
-        width: 95%;
-    }
-    /* This is the Hero Section */
-    .v2-hero-box:nth-child(1) {
-        width: 90%;
-    }
-    /* Badge Section */
-    .v2-badges-content>ul>li>img {
-        width: 110px;
-    }
-    .v2-badges-content>ul>li:nth-child(3)>img {
-        width: 90px;
-    }
-    .v2-hero-title>h1 {
-        font-size: 2.5rem;
-    }
-    /* Who We Are Section */
-    .v2-who-we-are-content {
-        width: 90%;
-    }
-    .v2-who-we-are-content>h1 {
-        font-size: 2.5rem;
-    }
-    .v2-who-we-are-content>h2 {
-        font-size: 1.5rem;
-    }
-    /* Stats Section */
-    .v2-stats-wrapper>h2 {
-        font-size: 2.5rem;
-    }
-    .v2-stats-wrapper>ul>li>h2 {
-        font-size: 1.5rem;
-    }
-    /* Video Section */
-    .v2-video-section-content>h1 {
-        width: 80%;
-        font-size: 2.5rem;
-        padding: 0;
-    }
-    .v2-video-section-box {
-        width: 90%;
-    }
-    /* Benefits Section */
-    .v2-benefits-wrapper>h1 {
-        width: 85%;
-        font-size: 2.5rem;
-        padding: 20px 0;
-    }
-    /* How It Works Section */
-    .v2-how-it-works-box>h1 {
-        font-size: 2.5rem;
-    }
-    /* Calculator Section */
-    .selection-box-ac>h2,
-    .selection-box>h2 {
-        width: 90%;
-        font-size: 2em;
-    }
-    #comparison-box-qc-wrapper,
-    #comparison-box-ac-wrapper,
-    #ac-kwh-selection {
-        width: 90%;
-    }
-    #fan-selection,
-    #trident-models,
-    #stealth-models,
-    #ac-kwh-selection {
-        font-size: 1em;
-    }
-    .hours-box>h2,
-    .day-title,
-    .month-title,
-    .year-title,
-    #slider-and-results-wrapper>.title-section>h3,
-    #slider-day-results,
-    #slider-month-results,
-    #slider-year-results,
-    #slider-and-results-kwh-wrapper>.title-section>h3,
-    #slider-day-results-ac,
-    #slider-month-results-ac,
-    #slider-year-results-ac {
-        font-size: 1.3em !important;
-    }
-    .comparison-main-box {
-        -webkit-box-align: start;
-        -ms-flex-align: start;
-        align-items: flex-start;
-    }
-    .comparison-box-ac,
-    .comparison-box-qc {
-        padding: 0 !important;
-    }
-    /* About us Section */
-    .v2-about-us-text-content>h1 {
-        font-size: 2.5rem;
-    }
-    /* FAQ Section */
-    .v2-faq-wrapper>h1 {
-        font-size: 2.5rem;
-    }
-    .v2-faq-text-content>h2 {
-        font-size: 1.5rem;
-    }
-    /* Products Sections */
-    /* This is the trident section */
-    .trident-item {
-        background-attachment: scroll;
-    }
-    .trident-side {
-        width: 90%;
-    }
-    .tab-nav {
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-box-align: start;
-        -ms-flex-align: start;
-        align-items: flex-start;
-    }
-    .tab-nav>ul {
-        width: 100%;
-    }
-    .tab-nav>ul>li {
-        width: 29%;
-        font-size: 1em;
-        padding: 5px 10px;
-    }
-    .whf-table-box>div>table>tbody>tr>td {
-        font-size: 1em;
-    }
-    .trident-side>.title-section {
-        padding: 20px 0;
-    }
-    .disclosure {
-        width: 75%;
-        margin: 0 auto;
-        font-size: 1em;
-    }
-    .trident-side>.title-section>h2 {
-        width: 75%;
-    }
-    .trident-list>li {
-        font-size: 1em;
-    }
-    .trident-side>p {
-        font-size: 1em;
-    }
-    /* This is the Stealth Section */
-    .stealth-item {
-        background-attachment: scroll;
-    }
-    .stealth-side {
-        width: 90%;
-    }
-    .tab-nav {
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-box-align: start;
-        -ms-flex-align: start;
-        align-items: flex-start;
-    }
-    .tab-nav>ul {
-        width: 100%;
-    }
-    .tab-nav>ul>li {
-        width: 29%;
-        font-size: 1em;
-        padding: 5px 10px;
-    }
-    .whf-table-box>div>table>tbody>tr>td {
-        font-size: 1em;
-    }
-    .stealth-side>.title-section {
-        padding: 20px 0;
-    }
-    .disclosure {
-        width: 75%;
-        margin: 0 auto;
-        font-size: 1em;
-    }
-    .stealth-side>.title-section>h2 {
-        width: 75%;
-    }
-    .stealth-list>li {
-        font-size: 1em;
-    }
-    .stealth-side>p {
-        font-size: 1em;
-    }
-    /* This is the RF Section */
-    .rf-controller-title-section>.title-section>h2 {
-        width: 75%;
-        margin: 0 auto;
-    }
-    .rf-controller-item {
-        background-attachment: scroll;
-    }
-    .rf-controller-side {
-        width: 90%;
-    }
-    .rf-controller-side>.title-section {
-        padding: 20px 0;
-    }
-    .disclosure {
-        width: 75%;
-        margin: 0 auto;
-        font-size: 1em;
-    }
-    .stealth-side>.title-section>h2 {
-        width: 75%;
-    }
-    .stealth-list>li {
-        font-size: 1em;
-    }
-    .stealth-side>p {
-        font-size: 1em;
-    }
-    .rf-controller-side>img:nth-child(2) {
-        width: 75%;
-    }
-}
-
 @media only screen and (max-width:735px) {
     .v2-benefits-wrapper>p {
         width: 90%;
@@ -3320,6 +3537,12 @@ These are the Media Queries */
     }
 }
 
+@media only screen and (max-width:500px) {
+    .v2-footer-content {
+        width: 100%;
+    }
+}
+
 @media only screen and (max-width:414px) {
     .v2-form-modal-wrapper {
         height: auto;
@@ -3344,6 +3567,14 @@ These are the Media Queries */
     }
     .v2-form-modal-content>form>input {
         font-size: .8rem;
+    }
+    /* Nav Section */
+    .v2-logo-container,
+    .v2-nav-list-container {
+        width: 50%;
+    }
+    .v2-nav-mobile-trigger {
+        width: 95%;
     }
     /* Hero Section */
     .v2-hero-section,
@@ -3451,7 +3682,7 @@ These are the Media Queries */
     }
     .tab-nav>ul>li {
         font-size: .7em;
-        width: 31%;
+        width: 25%;
     }
     .whf-table-box>div>table>tbody>tr>td {
         font-size: .6em;
@@ -3460,13 +3691,15 @@ These are the Media Queries */
         width: 93%;
     }
     .trident-side>.title-section>h2 {
-        width: 95%;
+        width: 74%;
+        margin: 0 auto;
     }
     .stealth-title-section {
         padding: 0 0 100px 0;
     }
     .stealth-side>.title-section>h2 {
-        width: 95%;
+        width: 74%;
+        margin: 0 auto;
     }
     .rf-controller-title-section>.title-section>h2 {
         width: 94%;
@@ -3506,6 +3739,9 @@ These are the Media Queries */
     }
     .v2-form-modal-content>form>input {
         font-size: .8rem;
+    }
+    .title-section>h2 {
+        font-size: 1.5rem;
     }
     /* Hero Section */
     .v2-hero-title>h1 {
@@ -3575,6 +3811,13 @@ These are the Media Queries */
     }
     .v2-how-it-works-text-content>p {
         font-size: 1rem;
+    }
+    /* Products Section */
+    .stealth-side>.title-section>h2 {
+        width: 95%;
+    }
+    .trident-side>.title-section>h2 {
+        width: 95%;
     }
     /* Calculator Section */
     .calculator-box>.title-section>h3 {
