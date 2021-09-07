@@ -619,11 +619,17 @@ function selectAC() {
 
 selectAC();
 
+
+
+
+setTimeout(function() {
+    $(".optionTwo").css("display", "flex");
+}, 3000);
+
 function rebateModal() {
     // $(".optionOne").css("display", "none");
-    $(".rebate-modal-minimized-container").css("display", "none");
+
     $(".rebate-modal-minimized-container-2").css("display", "block");
-    $(".optionTwo").css("display", "block");
 
     $(".rebate-btn-2 a").click(() => {
         $(".rebate-modal-form-container-2").css("display", "flex");
