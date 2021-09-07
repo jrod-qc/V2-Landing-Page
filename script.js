@@ -618,3 +618,38 @@ function selectAC() {
 }
 
 selectAC();
+
+function rebateModal() {
+    // $(".optionOne").css("display", "none");
+    $(".rebate-modal-minimized-container").css("display", "none");
+    $(".rebate-modal-minimized-container-2").css("display", "block");
+    $(".optionTwo").css("display", "block");
+
+    $(".rebate-btn-2 a").click(() => {
+        $(".rebate-modal-form-container-2").css("display", "flex");
+        $(".rebate-modal-right-side-2").css("display", "none");
+        $(".rebate-modal-popup-exit-btn-box-2").css("display", "none");
+        $(".rebate-modal-popup-main-content-2").css("height", "100%");
+        $(".rebate-modal-left-side-2").css("width", "50%");
+
+    })
+
+    $(".rebate-form-popup-exit-btn-box-2 i").click(() => {
+        $(".rebate-modal-form-container-2").css("display", "none");
+        $(".rebate-modal-right-side-2").css("display", "block");
+        $(".rebate-modal-popup-exit-btn-box-2").css("display", "flex");
+        $(".rebate-modal-popup-main-content-2").css("height", "100%");
+    })
+
+    $(".rebate-modal-popup-exit-btn-box-2 i").click(() => {
+        $(".rebate-modal-popup-container-2").css("display", "none");
+        $(".rebate-modal-minimized-container-2").css("left", "0px");
+    })
+
+    $(".rebate-modal-minimized-btn-2 a").click(() => {
+        $(".rebate-modal-popup-container-2").css("display", "flex");
+        $(".rebate-modal-minimized-container-2").css("left", "-170px");
+    })
+}
+
+rebateModal();
